@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A field notebook of Indian art and material culture.">
+  <title>Field Notes: India in Objects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <a class="wordmark" href="#top"><span class="stamp">F/N</span><span>Field Notes<br><small>Indian art archive</small></span></a>
+      <nav aria-label="Primary navigation"><a href="#atlas">Atlas</a><a href="#cabinet">Cabinet</a><a href="#about">About</a></nav>
+      <button class="menu-button" type="button" aria-label="Open menu"><span></span><span></span></button>
+    </header>
+
+    <section class="intro" id="top">
+      <div class="intro-copy"><p class="kicker">Issue 04 / 5,000 years of looking</p><h1>India in<br><em>objects.</em></h1><p class="lede">A visual field guide to the ideas, materials, and hands behind six remarkable works. Start anywhere on the map of time.</p></div>
+      <div class="intro-sketch" aria-hidden="true"><div class="sun"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="sketch-label">material<br>memory</span></div>
+    </section>
+
+    <section class="atlas" id="atlas">
+      <div class="section-head"><div><p class="kicker">01 / The atlas</p><h2>Follow the line</h2></div><p class="section-note">Six objects, one changing<br>way of seeing.</p></div>
+      <div class="atlas-layout">
+        <div class="years" role="tablist" aria-label="Objects by period">
+          <button class="year active" type="button" data-index="0" role="tab" aria-selected="true"><span>01</span><strong>250 BCE</strong><small>Mauryan India</small></button>
+          <button class="year" type="button" data-index="1" role="tab" aria-selected="false"><span>02</span><strong>100 BCE</strong><small>Sanchi</small></button>
+          <button class="year" type="button" data-index="2" role="tab" aria-selected="false"><span>550 CE</span><small>Vakataka</small></button>
+          <button class="year" type="button" data-index="3" role="tab" aria-selected="false"><span>760 CE</span><small>Rashtrakuta India</small></button>
+          <button class="year" type="button" data-index="4" role="tab" aria-selected="false"><span>1600 CE</span><small>Gujarat</small></button>
+          <button class="year" type="button" data-index="5" role="tab" aria-selected="false"><span>1775 CE</span><small>Kishangarh</small></button>
+        </div>
+        <article class="feature" aria-live="polite"></article>
+      </div>
+    </section>
+
+    <section class="cabinet" id="cabinet"><div class="section-head"><div><p class="kicker">02 / The cabinet</p><h2>Look closer</h2></div><div class="filters" role="group" aria-label="Filter the cabinet"><button class="filter active" type="button" data-filter="all">All</button><button class="filter" type="button" data-filter="ancient">Ancient</button><button class="filter" type="button" data-filter="classical">Classical</button><button class="filter" type="button" data-filter="medieval">Medieval</button><button class="filter" type="button" data-filter="modern">Modern</button></div></div><div class="object-grid"></div></section>
+
+    <footer id="about"><span>Field Notes / An open study room</span><span>Research edition · 2026</span></footer>
+  </main>
+  <div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden><div class="drawer-panel"><button class="drawer-close" type="button" aria-label="Close object details">×</button><img id="drawer-image" src="" alt=""><div class="drawer-copy"><p class="kicker" id="drawer-period"></p><h2 id="drawer-title">Object details</h2><p id="drawer-description"></p><p class="drawer-fact" id="drawer-fact"></p></div></div></div>
+  <script src="app.js"></script>
+</body>
+</html>
